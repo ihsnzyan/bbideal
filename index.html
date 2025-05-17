@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek berat badan ideal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="atasan"> <h1 class="sanzekai">SANZEKAI</h1> </div>
+
+    <div class="konten">
+        <div class="judul">
+            <h1 class="jdl">CEK BB IDEAL</h1>
+        </div>
+        <div class="inputan">
+            <div class="dongo">
+                <input type="number" name="berbad" id="bb" placeholder="BB (KG)" class="berbad">
+                <input type="number" name="tingbad" id="tb" placeholder="TB (CM)" class="tingbad">
+            </div>
+            <div class="bt">
+            <input type="submit" class="buton" id="buton" onclick = sending()></div>
+        </div>
+        <div class="output">
+            <p id="op" class="op">MASUKKAN BERAT BADAN DAN TINGGI BADAN ANDA</p>
+        </div>
+    </div>
+
+        </div>
+        <div class="sosmed">
+        <a href="https://www.instagram.com/ihsnz_yan?igsh=MWtrenRtbDR2bXNiYQ==" target="_blank"> <img src="instagram.png" alt="Instagram"></a>
+        <a href="https://www.tiktok.com/@ihsnz_yan?_t=ZS-8vzwYNFj7aM&_r=1" target="_blank"> <img src="tiktok.png" alt="Tiktok"></a>
+        <a href="https://www.snapchat.com/add/ihsnz_yan?share_id=ugIeX0cPNjY&locale=id-ID" target="_blank"> <img src="snapchat.png" alt="Snapchat"></a>
+        <a href="https://www.facebook.com/share/1HgCufMezm/" target="_blank"> <img src="facebook.png" alt="Facebook"></a>
+        <a href="https://x.com/ihsnz_yan?t=RIm5MIWzc1n9Yeh75rHBJQ&s=09" target="_blank"> <img src="twitter.png" alt="twitter"></a>
+        <a href="https://open.spotify.com/user/31p4igkn7dx5btemjxzd3f2wnp54?si=dqCLxoyXRnCe3PMtrhRwhA" target="_blank"> <img src="spotify.png" alt="Spotify"></a>
+        <a href="https://youtube.com/@ihsnz_yan?si=x-3OIeBz9A4LCLhi" target="_blank"> <img src="youtube.png" alt="Youtube"></a>
+    </div>
+
+</body>
+</html>
+
+<script>
+    function sending()
+    {
+    let bmi = (document.getElementById("bb").value) / ((document.getElementById("tb").value * document.getElementById("tb").value)/10000);
+    let hasil = document.getElementById("op");
+    let nmbh = (19-bmi.toFixed(2))*((document.getElementById("tb").value * document.getElementById("tb").value)/10000)
+    let ngrg = (bmi.toFixed(2)-26)*((document.getElementById("tb").value * document.getElementById("tb").value)/10000)
+    
+    if (document.getElementById("tb").value < 50 || document.getElementById("bb").value < 2) {
+        hasil.innerText = "MASUKKAN DATA DENGAN BENAR";
+    }
+    else if (bmi < 18.5) {
+        hasil.innerText = "INDEX BMI ANDA ADALAH " + bmi.toFixed(2) + " DAN ANDA PERLU MENAMBAH BERAT BADAN SEKITAR " + nmbh.toFixed(2) +" KG" 
+
+    }
+    else if (bmi > 25) {
+        hasil.innerText = "INDEX BMI ANDA ADALAH " + bmi.toFixed(2) + " DAN ANDA PERLU MENGURANGI BERAT BADAN SEKITAR " + ngrg.toFixed(2) +" KG" 
+    }
+    else {
+        hasil.innerText = "INDEX BMI ANDA ADALAH " + bmi.toFixed(2) + " DAN BERAT BADAN SUDAH IDEAL"
+
+    }
+}
+    
+</script>

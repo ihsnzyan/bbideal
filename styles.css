@@ -1,0 +1,76 @@
+body {background-color: #ADEFD1FF;}
+
+.atasan {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15vw;
+    max-height: 100px;
+    min-height: 70px;
+    padding-left: 30px;
+    
+    background-color: #00203FFF;
+    align-items: center;}
+.sanzekai { align-items: center; color: #ADEFD1FF;}
+
+.judul { padding-top: 100px; align-items: center; width: 100%;}
+.jdl { 
+    font-family: cursive;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: clamp(30px, 10vw, 70px);
+    color: #00203FFF;
+}
+
+.inputan {justify-content: center; align-items: center;}
+.tingbad {border-radius: 25px; width: 20vw; height: 20vw;
+    background-color: #00203FFF; justify-content: center; align-items: center; max-height: 100px; max-width: 100px; 
+    color: #ADEFD1FF; font-size: clamp(10px, 10vw, 20px); text-align: center;}
+.berbad {border-radius: 25px; width: 20vw; height: 20vw;
+    background-color: #00203FFF; color: #ADEFD1FF; max-height: 100px; max-width: 100px; font-size: clamp(10px, 10vw, 20px); text-align: center;}
+.dongo {gap: 10px; justify-content: center; align-items: center; display: flex;}
+
+input::placeholder {color: #ADEFD1FF; text-align: center; font-size: 15px;}
+
+
+.bt {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    align-items: center; 
+    padding-top: 15px; justify-content: center;}
+.buton {
+    border-radius: 100px;
+    background-color: #00203FFF;
+    color: #ADEFD1FF;
+    align-items: center; justify-content: center;}
+
+    .op {
+        text-align: center;
+        color: #00203FFF;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        font-size: clamp(15px, 10vw, 3px);}
+
+        .sosmed{
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15vw;
+    gap: 4vw;
+    background-color: #1E1E2E;
+    z-index: 1000;
+    max-height: 75px;
+}
+.sosmed img {
+    width: 10vw;
+    align-items: center;
+    max-width: 50px;
+
+}
