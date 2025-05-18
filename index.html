@@ -45,8 +45,8 @@
     {
     let bmi = (document.getElementById("bb").value) / ((document.getElementById("tb").value * document.getElementById("tb").value)/10000);
     let hasil = document.getElementById("op");
-    let nmbh = (19-bmi.toFixed(2))*((document.getElementById("tb").value * document.getElementById("tb").value)/10000)
-    let ngrg = (bmi.toFixed(2)-26)*((document.getElementById("tb").value * document.getElementById("tb").value)/10000)
+    let nmbh = (18.5-bmi.toFixed(2))*((document.getElementById("tb").value * document.getElementById("tb").value)/10000)
+    let ngrg = (bmi.toFixed(2)-25)*((document.getElementById("tb").value * document.getElementById("tb").value)/10000)
     
     if (document.getElementById("tb").value < 50 || document.getElementById("bb").value < 2) {
         hasil.innerText = "MASUKKAN DATA DENGAN BENAR";
